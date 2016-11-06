@@ -1,0 +1,6 @@
+framework module Pods_TrainTimetable1_0 {
+  umbrella header "Pods-TrainTimetable1.0-umbrella.h"
+
+  export *
+  module * { export * }
+}

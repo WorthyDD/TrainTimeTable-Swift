@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataSet xmlns="http://WebXml.com.cn/">
+    <xs:schema id="getStationAndTime" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xs:element name="getStationAndTime" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+            <xs:complexType>
+                <xs:choice minOccurs="0" maxOccurs="unbounded">
+                    <xs:element name="TimeTable">
+                        <xs:complexType>
+                            <xs:sequence>
+                                <xs:element name="TrainCode" type="xs:string" minOccurs="0" />
+                                <xs:element name="FirstStation" type="xs:string" minOccurs="0" />
+                                <xs:element name="LastStation" type="xs:string" minOccurs="0" />
+                                <xs:element name="StartStation" type="xs:string" minOccurs="0" />
+                                <xs:element name="StartTime" type="xs:string" minOccurs="0" />
+                                <xs:element name="ArriveStation" type="xs:string" minOccurs="0" />
+                                <xs:element name="ArriveTime" type="xs:string" minOccurs="0" />
+                                <xs:element name="KM" type="xs:short" minOccurs="0" />
+                                <xs:element name="UseDate" type="xs:string" minOccurs="0" />
+                            </xs:sequence>
+                        </xs:complexType>
+                    </xs:element>
+                </xs:choice>
+            </xs:complexType>
+        </xs:element>
+    </xs:schema>
+    <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+        <getStationAndTime xmlns="">
+            <TimeTable diffgr:id="TimeTable1" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                <TrainCode>1461</TrainCode>
+                <FirstStation>北京</FirstStation>
+                <LastStation>上海</LastStation>
+                <StartStation>北京</StartStation>
+                <StartTime>11:54:00</StartTime>
+                <ArriveStation>上海</ArriveStation>
+                <ArriveTime>08:11:00</ArriveTime>
+                <KM>1463</KM>
+                <UseDate>20:17</UseDate>
+            </TimeTable>
+            <TimeTable diffgr:id="TimeTable2" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                <TrainCode>D311</TrainCode>
+                <FirstStation>北京南</FirstStation>
+                <LastStation>上海</LastStation>
+                <StartStation>北京南</StartStation>
+                <StartTime>21:16:00</StartTime>
+                <ArriveStation>上海</ArriveStation>
+                <ArriveTime>08:58:00</ArriveTime>
+                <KM>1454</KM>
+                <UseDate>11:42</UseDate>
+            </TimeTable>
+            <TimeTable diffgr:id="TimeTable3" msdata:rowOrder="2" diffgr:hasChanges="inserted">
+                <TrainCode>D313</TrainCode>
+                <FirstStation>北京南</FirstStation>
+                <LastStation>上海</LastStation>
+                <StartStation>北京南</StartStation>
+                <StartTime>19:34:00</StartTime>
+                <ArriveStation>上海</ArriveStation>
+                <ArriveTime>07:41:00</ArriveTime>
+                <KM>1454</KM>
+                <UseDate>12:07</UseDate>
+            </TimeTable>
+            <TimeTable diffgr:id="TimeTable4" msdata:rowOrder="3" diffgr:hasChanges="inserted">
+                <TrainCode>D321</TrainCode>
+                <FirstStation>北京南</FirstStation>
+                <LastStation>上海</LastStation>
+                <StartStation>北京南</StartStation>
+                <StartTime>21:23:00</StartTime>
+                <ArriveStation>上海</ArriveStation>
+                <ArriveTime>09:13:00</ArriveTime>
+                <KM>1454</KM>
+                <UseDate>11:50</UseDate>
+            </TimeTable>
+            <TimeTable diffgr:id="TimeTable5" msdata:rowOrder="4" diffgr:hasChanges="inserted">
+                <TrainCode>G1</TrainCode>
+                <FirstStation>北京南</FirstStation>
+                <LastStation>上海虹桥</LastStation>
+                <StartStation>北京南</StartStation>
+                <StartTime>09:00:00</StartTime>
+                <ArriveStation>上海虹桥</ArriveStation>
+                <ArriveTime>13:48:00</ArriveTime>
+                <KM>1318</KM>
+                <UseDate>04:48</UseDate>
+            </TimeTable>
+            <TimeTable diffgr:id="TimeTable6" msdata:rowOrder="5" diffgr:hasChanges="inserted">
+                <TrainCode>G101</TrainCode>
+                <FirstStation>北京南</FirstStation>
+                <LastStation>上海虹桥</LastStation>
+                <StartStation>北京南</StartStation>
+                <StartTime>07:00:00</StartTime>
+                <ArriveStation>上海虹桥</ArriveStation>
+                <ArriveTime>12:37:00</ArriveTime>
+                <KM>1318</KM>
+                <UseDate>05:37</UseDate>
+            </TimeTable>
+            <TimeTable diffgr:id="TimeTable7" msdata:rowOrder="6" diffgr:hasChanges="inserted">
+                <TrainCode>G105</TrainCode>
+                <FirstStation>北京南</FirstStation>
+                <LastStation>上海虹桥</LastStation>
+                <StartStation>北京南</StartStation>
+                <StartTime>07:36:00</StartTime>
+                <ArriveStation>上海虹桥</ArriveStation>
+                <ArriveTime>13:21:00</ArriveTime>
+                <KM>1318</KM>
+                <UseDate>05:45</UseDate>
+            </TimeTable>
+            <TimeTable diffgr:id="TimeTable8" msdata:rowOrder="7" diffgr:hasChanges="inserted">
+                <TrainCode>G107</TrainCode>
+                <FirstStation>北京南</FirstStation>
+                <LastStation>上海虹桥</LastStation>
+                <StartStation>北京南</StartStation>
+                <StartTime>08:05:00</StartTime>
+                <ArriveStation>上海虹桥</ArriveStation>
+                <ArriveTime>13:26:00</ArriveTime>
+                <KM>1318</KM>
+                <UseDate>05:21</UseDate>
+            </TimeTable>
+            <TimeTable diffgr:id="TimeTable9" msdata:rowOrder="8" diffgr:hasChanges="inserted">
+                <TrainCode>G109</TrainCode>
+                <FirstStation>北京南</FirstStation>
+                <LastStation>上海虹桥</LastStation>
+                <StartStation>北京南</StartStation>
+                <StartTime>08:15:00</StartTime>
+                <ArriveStation>上海虹桥</ArriveStation>
+                <ArriveTime>14:00:00</ArriveTime>
+                <KM>1318</KM>
+                <UseDate>05:45</UseDate>
+            </TimeTable>
+            <TimeTable diffgr:id="TimeTable10" msdata:rowOrder="9" diffgr:hasChanges="inserted">
+                <TrainCode>G11</TrainCode>
+                <FirstStation>北京南</FirstStation>
+                <LastStation>上海虹桥</LastStation>
+                <StartStation>北京南</StartStation>
+                <StartTime>08:00:00</StartTime>
+                <ArriveStation>上海虹桥</ArriveStation>
+                <ArriveTime>13:09:00</ArriveTime>
+                <KM>1318</KM>
+                <UseDate>05:09</UseDate>
+            </TimeTable>
+            <TimeTable diffgr:id="TimeTable11" msdata:rowOrder="10" diffgr:hasChanges="inserted">
+                <TrainCode>G111</TrainCode>
+                <FirstStation>北京南</FirstStation>
+                <LastStation>上海虹桥</LastStation>
+                <StartStation>北京南</StartStation>
+                <StartTime>08:35:00</StartTime>
+                <ArriveStation>上海虹桥</ArriveStation>
+                <ArriveTime>14:21:00</ArriveTime>
+                <KM>1318</KM>
+                <UseDate>05:46</UseDate>
+            </TimeTable>
+            <TimeTable diffgr:id="TimeTable12" msdata:rowOrder="11" diffgr:hasChanges="inserted">
+                <TrainCode>G113</TrainCode>
+                <FirstStation>北京南</FirstStation>
+                <LastStation>上海虹桥</LastStation>
+                <StartStation>北京南</StartStation>
+                <StartTime>09:05:00</StartTime>
+                <ArriveStation>上海虹桥</ArriveStation>
+                <ArriveTime>14:29:00</ArriveTime>
+                <KM>1318</KM>
+                <UseDate>05:24</UseDate>
+            </TimeTable>
+            <TimeTable diffgr:id="TimeTable13" msdata:rowOrder="12" diffgr:hasChanges="inserted">
+                <TrainCode>G115</TrainCode>
+                <FirstStation>北京南</FirstStation>
+                <LastStation>上海虹桥</LastStation>
+                <StartStation>北京南</StartStation>
+                <StartTime>09:32:00</StartTime>
+                <ArriveStation>上海虹桥</ArriveStation>
+                <ArriveTime>15:14:00</ArriveTime>
+                <KM>1318</KM>
+                <UseDate>05:42</UseDate>
+            </TimeTable>
+            <TimeTable diffgr:id="TimeTable14" msdata:rowOrder="13" diffgr:hasChanges="inserted">
+                <TrainCode>G117</TrainCode>
+                <FirstStation>北京南</FirstStation>
+                <LastStation>上海虹桥</LastStation>
+                <StartStation>北京南</StartStation>
+                <StartTime>09:43:00</StartTime>
+                <ArriveStation>上海虹桥</ArriveStation>
+                <ArriveTime>15:41:00</ArriveTime>
+                <KM>1318</KM>
+                <UseDate>05:58</UseDate>
+            </TimeTable>
+            <TimeTable diffgr:id="TimeTable15" msdata:rowOrder="14" diffgr:hasChanges="inserted">
+                <TrainCode>G119</TrainCode>
+                <FirstStation>北京南</FirstStation>
+                <LastStation>上海虹桥</LastStation>
+                <StartStation>北京南</StartStation>
+                <StartTime>10:05:00</StartTime>
+                <ArriveStation>上海虹桥</ArriveStation>
+                <ArriveTime>15:45:00</ArriveTime>
+                <KM>1318</KM>
+                <UseDate>05:40</UseDate>
+            </TimeTable>
+            <TimeTable diffgr:id="TimeTable16" msdata:rowOrder="15" diffgr:hasChanges="inserted">
+                <TrainCode>G121</TrainCode>
+                <FirstStation>北京南</FirstStation>
+                <LastStation>上海虹桥</LastStation>
+                <StartStation>北京南</StartStation>
+                <StartTime>10:28:00</StartTime>
+                <ArriveStation>上海虹桥</ArriveStation>
+                <ArriveTime>16:27:00</ArriveTime>
+                <KM>1318</KM>
+                <UseDate>05:59</UseDate>
+            </TimeTable>
+            <TimeTable diffgr:id="TimeTable17" msdata:rowOrder="16" diffgr:hasChanges="inserted">
+                <TrainCode>G123</TrainCode>
+                <FirstStation>北京南</FirstStation>
+                <LastStation>上海虹桥</LastStation>
+                <StartStation>北京南</StartStation>
+                <StartTime>11:05:00</StartTime>
+                <ArriveStation>上海虹桥</ArriveStation>
+                <ArriveTime>16:42:00</ArriveTime>
+                <KM>1318</KM>
+                <UseDate>05:37</UseDate>
+            </TimeTable>
+            <TimeTable diffgr:id="TimeTable18" msdata:rowOrder="17" diffgr:hasChanges="inserted">
+                <TrainCode>G125</TrainCode>
+                <FirstStation>北京南</FirstStation>
+                <LastStation>上海虹桥</LastStation>
+                <StartStation>北京南</StartStation>
+                <StartTime>11:10:00</StartTime>
+                <ArriveStation>上海虹桥</ArriveStation>
+                <ArriveTime>16:59:00</ArriveTime>
+                <KM>1318</KM>
+                <UseDate>05:49</UseDate>
+            </TimeTable>
+            <TimeTable diffgr:id="TimeTable19" msdata:rowOrder="18" diffgr:hasChanges="inserted">
+                <TrainCode>G127</TrainCode>
+                <FirstStation>北京南</FirstStation>
+                <LastStation>上海虹桥</LastStation>
+                <StartStation>北京南</StartStation>
+                <StartTime>11:35:00</StartTime>
+                <ArriveStation>上海虹桥</ArriveStation>
+                <ArriveTime>17:16:00</ArriveTime>
+                <KM>1318</KM>
+                <UseDate>05:41</UseDate>
+            </TimeTable>
+            <TimeTable diffgr:id="TimeTable20" msdata:rowOrder="19" diffgr:hasChanges="inserted">
+                <TrainCode>G129</TrainCode>
+                <FirstStation>北京南</FirstStation>
+                <LastStation>上海虹桥</LastStation>
+                <StartStation>北京南</StartStation>
+                <StartTime>12:15:00</StartTime>
+                <ArriveStation>上海虹桥</ArriveStation>
+                <ArriveTime>17:49:00</ArriveTime>
+                <KM>1318</KM>
+                <UseDate>05:34</UseDate>
+            </TimeTable>
+            <TimeTable diffgr:id="TimeTable21" msdata:rowOrder="20" diffgr:hasChanges="inserted">
+                <TrainCode>G13</TrainCode>
+                <FirstStation>北京南</FirstStation>
+                <LastStation>上海虹桥</LastStation>
+                <StartStation>北京南</StartStation>
+                <StartTime>10:00:00</StartTime>
+                <ArriveStation>上海虹桥</ArriveStation>
+                <ArriveTime>14:55:00</ArriveTime>
+                <KM>1318</KM>
+                <UseDate>04:55</UseDate>
+            </TimeTable>
+            <TimeTable diffgr:id="TimeTable22" msdata:rowOrder="21" diffgr:hasChanges="inserted">
+                <TrainCode>G131</TrainCode>
+                <FirstStation>北京南</FirstStation>
+                <LastStation>上海虹桥</LastStation>
+                <StartStation>北京南</StartStation>
+                <StartTime>12:25:00</StartTime>
+                <ArriveStation>上海虹桥</ArriveStation>
+                <ArriveTime>18:14:00</ArriveTime>
+                <KM>1318</KM>
+                <UseDate>05:49</UseDate>
+            </TimeTable>
+            <TimeTable diffgr:id="TimeTable23" msdata:rowOrder="22" diffgr:hasChanges="inserted">
+                <TrainCode>G133</TrainCode>
+                <FirstStation>北京南</FirstStation>
+                <LastStation>上海虹桥</LastStation>
+                <StartStation>北京南</StartStation>
+                <StartTime>12:52:00</StartTime>
+                <ArriveStation>上海虹桥</ArriveStation>
+                <ArriveTime>18:36:00</ArriveTime>
+                <KM>1318</KM>
+                <UseDate>05:44</UseDate>
+            </TimeTable>
+            <TimeTable diffgr:id="TimeTable24" msdata:rowOrder="23" diffgr:hasChanges="inserted">
+                <TrainCode>G135</TrainCode>
+                <FirstStation>北京南</FirstStation>
+                <LastStation>上海虹桥</LastStation>
+                <StartStation>北京南</StartStation>
+                <StartTime>13:02:00</StartTime>
+                <ArriveStation>上海虹桥</ArriveStation>
+                <ArriveTime>18:59:00</ArriveTime>
+                <KM>1318</KM>
+                <UseDate>05:57</UseDate>
+            </TimeTable>
+            <TimeTable diffgr:id="TimeTable25" msdata:rowOrder="24" diffgr:hasChanges="inserted">
+                <TrainCode>G137</TrainCode>
+                <FirstStation>北京南</FirstStation>
+                <LastStation>上海虹桥</LastStation>
+                <StartStation>北京南</StartStation>
+                <StartTime>13:45:00</StartTime>
+                <ArriveStation>上海虹桥</ArriveStation>
+                <ArriveTime>19:27:00</ArriveTime>
+                <KM>1318</KM>
+                <UseDate>05:42</UseDate>
+            </TimeTable>
+            <TimeTable diffgr:id="TimeTable26" msdata:rowOrder="25" diffgr:hasChanges="inserted">
+                <TrainCode>G139</TrainCode>
+                <FirstStation>北京南</FirstStation>
+                <LastStation>上海虹桥</LastStation>
+                <StartStation>北京南</StartStation>
+                <StartTime>14:10:00</StartTime>
+                <ArriveStation>上海虹桥</ArriveStation>
+                <ArriveTime>19:51:00</ArriveTime>
+                <KM>1318</KM>
+                <UseDate>05:41</UseDate>
+            </TimeTable>
+            <TimeTable diffgr:id="TimeTable27" msdata:rowOrder="26" diffgr:hasChanges="inserted">
+                <TrainCode>G141</TrainCode>
+                <FirstStation>北京南</FirstStation>
+                <LastStation>上海虹桥</LastStation>
+                <StartStation>北京南</StartStation>
+                <StartTime>14:31:00</StartTime>
+                <ArriveStation>上海虹桥</ArriveStation>
+                <ArriveTime>20:13:00</ArriveTime>
+                <KM>1318</KM>
+                <UseDate>05:42</UseDate>
+            </TimeTable>
+            <TimeTable diffgr:id="TimeTable28" msdata:rowOrder="27" diffgr:hasChanges="inserted">
+                <TrainCode>G143</TrainCode>
+                <FirstStation>北京南</FirstStation>
+                <LastStation>上海虹桥</LastStation>
+                <StartStation>北京南</StartStation>
+                <StartTime>14:36:00</StartTime>
+                <ArriveStation>上海虹桥</ArriveStation>
+                <ArriveTime>20:33:00</ArriveTime>
+                <KM>1318</KM>
+                <UseDate>05:57</UseDate>
+            </TimeTable>
+            <TimeTable diffgr:id="TimeTable29" msdata:rowOrder="28" diffgr:hasChanges="inserted">
+                <TrainCode>G145</TrainCode>
+                <FirstStation>北京南</FirstStation>
+                <LastStation>上海虹桥</LastStation>
+                <StartStation>北京南</StartStation>
+                <StartTime>15:15:00</StartTime>
+                <ArriveStation>上海虹桥</ArriveStation>
+                <ArriveTime>21:07:00</ArriveTime>
+                <KM>1318</KM>
+                <UseDate>05:52</UseDate>
+            </TimeTable>
+            <TimeTable diffgr:id="TimeTable30" msdata:rowOrder="29" diffgr:hasChanges="inserted">
+                <TrainCode>G147</TrainCode>
+                <FirstStation>北京南</FirstStation>
+                <LastStation>上海虹桥</LastStation>
+                <StartStation>北京南</StartStation>
+                <StartTime>16:05:00</StartTime>
+                <ArriveStation>上海虹桥</ArriveStation>
+                <ArriveTime>21:54:00</ArriveTime>
+                <KM>1318</KM>
+                <UseDate>05:49</UseDate>
+            </TimeTable>
+            <TimeTable diffgr:id="TimeTable31" msdata:rowOrder="30" diffgr:hasChanges="inserted">
+                <TrainCode>G149</TrainCode>
+                <FirstStation>北京南</FirstStation>
+                <LastStation>上海虹桥</LastStation>
+                <StartStation>北京南</StartStation>
+                <StartTime>16:25:00</StartTime>
+                <ArriveStation>上海虹桥</ArriveStation>
+                <ArriveTime>22:24:00</ArriveTime>
+                <KM>1318</KM>
+                <UseDate>05:59</UseDate>
+            </TimeTable>
+            <TimeTable diffgr:id="TimeTable32" msdata:rowOrder="31" diffgr:hasChanges="inserted">
+                <TrainCode>G15</TrainCode>
+                <FirstStation>北京南</FirstStation>
+                <LastStation>上海虹桥</LastStation>
+                <StartStation>北京南</StartStation>
+                <StartTime>11:00:00</StartTime>
+                <ArriveStation>上海虹桥</ArriveStation>
+                <ArriveTime>15:55:00</ArriveTime>
+                <KM>1318</KM>
+                <UseDate>04:55</UseDate>
+            </TimeTable>
+            <TimeTable diffgr:id="TimeTable33" msdata:rowOrder="32" diffgr:hasChanges="inserted">
+                <TrainCode>G151</TrainCode>
+                <FirstStation>北京南</FirstStation>
+                <LastStation>上海虹桥</LastStation>
+                <StartStation>北京南</StartStation>
+                <StartTime>16:35:00</StartTime>
+                <ArriveStation>上海虹桥</ArriveStation>
+                <ArriveTime>22:35:00</ArriveTime>
+                <KM>1318</KM>
+                <UseDate>06:00</UseDate>
+            </TimeTable>
+            <TimeTable diffgr:id="TimeTable34" msdata:rowOrder="33" diffgr:hasChanges="inserted">
+                <TrainCode>G153</TrainCode>
+                <FirstStation>北京南</FirstStation>
+                <LastStation>上海虹桥</LastStation>
+                <StartStation>北京南</StartStation>
+                <StartTime>17:15:00</StartTime>
+                <ArriveStation>上海虹桥</ArriveStation>
+                <ArriveTime>22:51:00</ArriveTime>
+                <KM>1318</KM>
+                <UseDate>05:36</UseDate>
+            </TimeTable>
+            <TimeTable diffgr:id="TimeTable35" msdata:rowOrder="34" diffgr:hasChanges="inserted">
+                <TrainCode>G155</TrainCode>
+                <FirstStation>北京南</FirstStation>
+                <LastStation>上海虹桥</LastStation>
+                <StartStation>北京南</StartStation>
+                <StartTime>17:20:00</StartTime>
+                <ArriveStation>上海虹桥</ArriveStation>
+                <ArriveTime>23:08:00</ArriveTime>
+                <KM>1318</KM>
+                <UseDate>05:48</UseDate>
+            </TimeTable>
+            <TimeTable diffgr:id="TimeTable36" msdata:rowOrder="35" diffgr:hasChanges="inserted">
+                <TrainCode>G157</TrainCode>
+                <FirstStation>北京南</FirstStation>
+                <LastStation>上海虹桥</LastStation>
+                <StartStation>北京南</StartStation>
+                <StartTime>17:44:00</StartTime>
+                <ArriveStation>上海虹桥</ArriveStation>
+                <ArriveTime>23:23:00</ArriveTime>
+                <KM>1318</KM>
+                <UseDate>05:39</UseDate>
+            </TimeTable>
+            <TimeTable diffgr:id="TimeTable37" msdata:rowOrder="36" diffgr:hasChanges="inserted">
+                <TrainCode>G159</TrainCode>
+                <FirstStation>北京南</FirstStation>
+                <LastStation>上海虹桥</LastStation>
+                <StartStation>北京南</StartStation>
+                <StartTime>17:48:00</StartTime>
+                <ArriveStation>上海虹桥</ArriveStation>
+                <ArriveTime>23:28:00</ArriveTime>
+                <KM>1318</KM>
+                <UseDate>05:40</UseDate>
+            </TimeTable>
+            <TimeTable diffgr:id="TimeTable38" msdata:rowOrder="37" diffgr:hasChanges="inserted">
+                <TrainCode>G17</TrainCode>
+                <FirstStation>北京南</FirstStation>
+                <LastStation>上海虹桥</LastStation>
+                <StartStation>北京南</StartStation>
+                <StartTime>15:00:00</StartTime>
+                <ArriveStation>上海虹桥</ArriveStation>
+                <ArriveTime>19:56:00</ArriveTime>
+                <KM>1318</KM>
+                <UseDate>04:56</UseDate>
+            </TimeTable>
+            <TimeTable diffgr:id="TimeTable39" msdata:rowOrder="38" diffgr:hasChanges="inserted">
+                <TrainCode>G19</TrainCode>
+                <FirstStation>北京南</FirstStation>
+                <LastStation>上海虹桥</LastStation>
+                <StartStation>北京南</StartStation>
+                <StartTime>16:00:00</StartTime>
+                <ArriveStation>上海虹桥</ArriveStation>
+                <ArriveTime>21:16:00</ArriveTime>
+                <KM>1318</KM>
+                <UseDate>05:16</UseDate>
+            </TimeTable>
+            <TimeTable diffgr:id="TimeTable40" msdata:rowOrder="39" diffgr:hasChanges="inserted">
+                <TrainCode>G21</TrainCode>
+                <FirstStation>北京南</FirstStation>
+                <LastStation>上海虹桥</LastStation>
+                <StartStation>北京南</StartStation>
+                <StartTime>17:00:00</StartTime>
+                <ArriveStation>上海虹桥</ArriveStation>
+                <ArriveTime>22:39:00</ArriveTime>
+                <KM>1318</KM>
+                <UseDate>05:39</UseDate>
+            </TimeTable>
+            <TimeTable diffgr:id="TimeTable41" msdata:rowOrder="40" diffgr:hasChanges="inserted">
+                <TrainCode>G3</TrainCode>
+                <FirstStation>北京南</FirstStation>
+                <LastStation>上海虹桥</LastStation>
+                <StartStation>北京南</StartStation>
+                <StartTime>14:00:00</StartTime>
+                <ArriveStation>上海虹桥</ArriveStation>
+                <ArriveTime>18:48:00</ArriveTime>
+                <KM>1318</KM>
+                <UseDate>04:48</UseDate>
+            </TimeTable>
+            <TimeTable diffgr:id="TimeTable42" msdata:rowOrder="41" diffgr:hasChanges="inserted">
+                <TrainCode>G41</TrainCode>
+                <FirstStation>北京南</FirstStation>
+                <LastStation>杭州东</LastStation>
+                <StartStation>北京南</StartStation>
+                <StartTime>09:17:00</StartTime>
+                <ArriveStation>上海虹桥</ArriveStation>
+                <ArriveTime>14:46:00</ArriveTime>
+                <KM>1318</KM>
+                <UseDate>05:29</UseDate>
+            </TimeTable>
+            <TimeTable diffgr:id="TimeTable43" msdata:rowOrder="42" diffgr:hasChanges="inserted">
+                <TrainCode>G411</TrainCode>
+                <FirstStation>北京南</FirstStation>
+                <LastStation>上海虹桥</LastStation>
+                <StartStation>北京南</StartStation>
+                <StartTime>11:20:00</StartTime>
+                <ArriveStation>上海虹桥</ArriveStation>
+                <ArriveTime>17:07:00</ArriveTime>
+                <KM>1318</KM>
+                <UseDate>05:47</UseDate>
+            </TimeTable>
+            <TimeTable diffgr:id="TimeTable44" msdata:rowOrder="43" diffgr:hasChanges="inserted">
+                <TrainCode>G43</TrainCode>
+                <FirstStation>北京南</FirstStation>
+                <LastStation>杭州东</LastStation>
+                <StartStation>北京南</StartStation>
+                <StartTime>14:05:00</StartTime>
+                <ArriveStation>上海虹桥</ArriveStation>
+                <ArriveTime>19:38:00</ArriveTime>
+                <KM>1318</KM>
+                <UseDate>05:33</UseDate>
+            </TimeTable>
+            <TimeTable diffgr:id="TimeTable45" msdata:rowOrder="44" diffgr:hasChanges="inserted">
+                <TrainCode>G5</TrainCode>
+                <FirstStation>北京南</FirstStation>
+                <LastStation>上海虹桥</LastStation>
+                <StartStation>北京南</StartStation>
+                <StartTime>07:00:00</StartTime>
+                <ArriveStation>上海虹桥</ArriveStation>
+                <ArriveTime>11:55:00</ArriveTime>
+                <KM>1318</KM>
+                <UseDate>04:55</UseDate>
+            </TimeTable>
+            <TimeTable diffgr:id="TimeTable46" msdata:rowOrder="45" diffgr:hasChanges="inserted">
+                <TrainCode>G7</TrainCode>
+                <FirstStation>北京南</FirstStation>
+                <LastStation>上海虹桥</LastStation>
+                <StartStation>北京南</StartStation>
+                <StartTime>19:00:00</StartTime>
+                <ArriveStation>上海虹桥</ArriveStation>
+                <ArriveTime>23:55:00</ArriveTime>
+                <KM>1318</KM>
+                <UseDate>04:55</UseDate>
+            </TimeTable>
+            <TimeTable diffgr:id="TimeTable47" msdata:rowOrder="46" diffgr:hasChanges="inserted">
+                <TrainCode>T109</TrainCode>
+                <FirstStation>北京</FirstStation>
+                <LastStation>上海</LastStation>
+                <StartStation>北京</StartStation>
+                <StartTime>19:33:00</StartTime>
+                <ArriveStation>上海</ArriveStation>
+                <ArriveTime>10:44:00</ArriveTime>
+                <KM>1463</KM>
+                <UseDate>15:11</UseDate>
+            </TimeTable>
+            <TimeTable diffgr:id="TimeTable48" msdata:rowOrder="47" diffgr:hasChanges="inserted">
+                <TrainCode>Z4021</TrainCode>
+                <FirstStation>北京</FirstStation>
+                <LastStation>上海</LastStation>
+                <StartStation>北京</StartStation>
+                <StartTime>18:01:00</StartTime>
+                <ArriveStation>上海</ArriveStation>
+                <ArriveTime>08:58:00</ArriveTime>
+                <KM>1463</KM>
+                <UseDate>14:57</UseDate>
+            </TimeTable>
+        </getStationAndTime>
+    </diffgr:diffgram>
+</DataSet>

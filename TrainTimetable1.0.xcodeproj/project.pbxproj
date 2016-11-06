@@ -1,0 +1,696 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C6C517DF01E3597FE8D2B102 /* Pods_TrainTimetable1_0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1F907D07FE45C16976EFA4 /* Pods_TrainTimetable1_0.framework */; };
+		CC2AC0231DCF0D5D00DF2A4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2AC0221DCF0D5D00DF2A4C /* AppDelegate.swift */; };
+		CC2AC02A1DCF0D5D00DF2A4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC2AC0281DCF0D5D00DF2A4C /* Main.storyboard */; };
+		CC2AC02C1DCF0D5D00DF2A4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC2AC02B1DCF0D5D00DF2A4C /* Assets.xcassets */; };
+		CC2AC02F1DCF0D5D00DF2A4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC2AC02D1DCF0D5D00DF2A4C /* LaunchScreen.storyboard */; };
+		CC2AC0551DCF117B00DF2A4C /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2AC0541DCF117B00DF2A4C /* MainPageViewController.swift */; };
+		CC2AC05A1DCF14E400DF2A4C /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2AC0591DCF14E400DF2A4C /* BaseView.swift */; };
+		CC2AC05C1DCF159F00DF2A4C /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2AC05B1DCF159F00DF2A4C /* BaseButton.swift */; };
+		CC2AC05E1DCF165300DF2A4C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2AC05D1DCF165300DF2A4C /* BaseViewController.swift */; };
+		CC2AC0611DCF2BEB00DF2A4C /* data.xml in Resources */ = {isa = PBXBuildFile; fileRef = CC2AC0601DCF2BEB00DF2A4C /* data.xml */; };
+		CC2AC0631DCF2D2900DF2A4C /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CC2AC0621DCF2D2900DF2A4C /* libxml2.tbd */; };
+		CC2AC0651DCF2F8100DF2A4C /* TimeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2AC0641DCF2F8100DF2A4C /* TimeTable.swift */; };
+		CC2AC0671DCF332600DF2A4C /* TimeTableParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2AC0661DCF332600DF2A4C /* TimeTableParser.swift */; };
+		CC2AC06A1DCF3AD500DF2A4C /* TimeTableListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2AC0691DCF3AD500DF2A4C /* TimeTableListController.swift */; };
+		CC2AC06C1DCF3CE600DF2A4C /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2AC06B1DCF3CE600DF2A4C /* TableCell.swift */; };
+		CC2AC06E1DCF419000DF2A4C /* data2.xml in Resources */ = {isa = PBXBuildFile; fileRef = CC2AC06D1DCF419000DF2A4C /* data2.xml */; };
+		CC2AC0701DCF420000DF2A4C /* TrainInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2AC06F1DCF420000DF2A4C /* TrainInfoController.swift */; };
+		CC2AC0721DCF425F00DF2A4C /* TrainInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2AC0711DCF425F00DF2A4C /* TrainInfoCell.swift */; };
+		CC2AC0741DCF44C800DF2A4C /* TrainInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2AC0731DCF44C800DF2A4C /* TrainInfo.swift */; };
+		CC2AC0761DCF452800DF2A4C /* TrainingInfoParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2AC0751DCF452800DF2A4C /* TrainingInfoParser.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC2AC0361DCF0D5D00DF2A4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC2AC0171DCF0D5D00DF2A4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC2AC01E1DCF0D5D00DF2A4C;
+			remoteInfo = TrainTimetable1.0;
+		};
+		CC2AC0411DCF0D5D00DF2A4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC2AC0171DCF0D5D00DF2A4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC2AC01E1DCF0D5D00DF2A4C;
+			remoteInfo = TrainTimetable1.0;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05E215F3A7B13B4BC4DBF376 /* Pods-TrainTimetable1.0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrainTimetable1.0.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrainTimetable1.0/Pods-TrainTimetable1.0.release.xcconfig"; sourceTree = "<group>"; };
+		90F1B8251725680AA47567E6 /* Pods-TrainTimetable1.0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrainTimetable1.0.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrainTimetable1.0/Pods-TrainTimetable1.0.debug.xcconfig"; sourceTree = "<group>"; };
+		BE1F907D07FE45C16976EFA4 /* Pods_TrainTimetable1_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrainTimetable1_0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC2AC01F1DCF0D5D00DF2A4C /* TrainTimetable1.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrainTimetable1.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC2AC0221DCF0D5D00DF2A4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CC2AC0291DCF0D5D00DF2A4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CC2AC02B1DCF0D5D00DF2A4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC2AC02E1DCF0D5D00DF2A4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CC2AC0301DCF0D5D00DF2A4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC2AC0351DCF0D5D00DF2A4C /* TrainTimetable1.0Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrainTimetable1.0Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC2AC03B1DCF0D5D00DF2A4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC2AC0401DCF0D5D00DF2A4C /* TrainTimetable1.0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrainTimetable1.0UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC2AC0461DCF0D5D00DF2A4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC2AC0541DCF117B00DF2A4C /* MainPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		CC2AC0591DCF14E400DF2A4C /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		CC2AC05B1DCF159F00DF2A4C /* BaseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
+		CC2AC05D1DCF165300DF2A4C /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		CC2AC0601DCF2BEB00DF2A4C /* data.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = data.xml; sourceTree = "<group>"; };
+		CC2AC0621DCF2D2900DF2A4C /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		CC2AC0641DCF2F8100DF2A4C /* TimeTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTable.swift; sourceTree = "<group>"; };
+		CC2AC0661DCF332600DF2A4C /* TimeTableParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTableParser.swift; sourceTree = "<group>"; };
+		CC2AC0691DCF3AD500DF2A4C /* TimeTableListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTableListController.swift; sourceTree = "<group>"; };
+		CC2AC06B1DCF3CE600DF2A4C /* TableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
+		CC2AC06D1DCF419000DF2A4C /* data2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = data2.xml; sourceTree = "<group>"; };
+		CC2AC06F1DCF420000DF2A4C /* TrainInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainInfoController.swift; sourceTree = "<group>"; };
+		CC2AC0711DCF425F00DF2A4C /* TrainInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainInfoCell.swift; sourceTree = "<group>"; };
+		CC2AC0731DCF44C800DF2A4C /* TrainInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainInfo.swift; sourceTree = "<group>"; };
+		CC2AC0751DCF452800DF2A4C /* TrainingInfoParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingInfoParser.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC2AC01C1DCF0D5D00DF2A4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC2AC0631DCF2D2900DF2A4C /* libxml2.tbd in Frameworks */,
+				C6C517DF01E3597FE8D2B102 /* Pods_TrainTimetable1_0.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC2AC0321DCF0D5D00DF2A4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC2AC03D1DCF0D5D00DF2A4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		662F49BAA378FACC25A50920 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC2AC0621DCF2D2900DF2A4C /* libxml2.tbd */,
+				BE1F907D07FE45C16976EFA4 /* Pods_TrainTimetable1_0.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7C904CEB2425CD28A5C04A0A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				90F1B8251725680AA47567E6 /* Pods-TrainTimetable1.0.debug.xcconfig */,
+				05E215F3A7B13B4BC4DBF376 /* Pods-TrainTimetable1.0.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CC2AC0161DCF0D5D00DF2A4C = {
+			isa = PBXGroup;
+			children = (
+				CC2AC0211DCF0D5D00DF2A4C /* TrainTimetable1.0 */,
+				CC2AC0381DCF0D5D00DF2A4C /* TrainTimetable1.0Tests */,
+				CC2AC0431DCF0D5D00DF2A4C /* TrainTimetable1.0UITests */,
+				CC2AC0201DCF0D5D00DF2A4C /* Products */,
+				7C904CEB2425CD28A5C04A0A /* Pods */,
+				662F49BAA378FACC25A50920 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CC2AC0201DCF0D5D00DF2A4C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC2AC01F1DCF0D5D00DF2A4C /* TrainTimetable1.0.app */,
+				CC2AC0351DCF0D5D00DF2A4C /* TrainTimetable1.0Tests.xctest */,
+				CC2AC0401DCF0D5D00DF2A4C /* TrainTimetable1.0UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC2AC0211DCF0D5D00DF2A4C /* TrainTimetable1.0 */ = {
+			isa = PBXGroup;
+			children = (
+				CC2AC0561DCF141600DF2A4C /* Toolkit */,
+				CC2AC0681DCF3AA300DF2A4C /* Model */,
+				CC2AC0531DCF115100DF2A4C /* Timetable */,
+				CC2AC0521DCF112C00DF2A4C /*  SupportFiles */,
+			);
+			path = TrainTimetable1.0;
+			sourceTree = "<group>";
+		};
+		CC2AC0381DCF0D5D00DF2A4C /* TrainTimetable1.0Tests */ = {
+			isa = PBXGroup;
+			children = (
+				CC2AC03B1DCF0D5D00DF2A4C /* Info.plist */,
+			);
+			path = TrainTimetable1.0Tests;
+			sourceTree = "<group>";
+		};
+		CC2AC0431DCF0D5D00DF2A4C /* TrainTimetable1.0UITests */ = {
+			isa = PBXGroup;
+			children = (
+				CC2AC0461DCF0D5D00DF2A4C /* Info.plist */,
+			);
+			path = TrainTimetable1.0UITests;
+			sourceTree = "<group>";
+		};
+		CC2AC0521DCF112C00DF2A4C /*  SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				CC2AC0221DCF0D5D00DF2A4C /* AppDelegate.swift */,
+				CC2AC0281DCF0D5D00DF2A4C /* Main.storyboard */,
+				CC2AC02B1DCF0D5D00DF2A4C /* Assets.xcassets */,
+				CC2AC02D1DCF0D5D00DF2A4C /* LaunchScreen.storyboard */,
+				CC2AC0301DCF0D5D00DF2A4C /* Info.plist */,
+			);
+			name = " SupportFiles";
+			sourceTree = "<group>";
+		};
+		CC2AC0531DCF115100DF2A4C /* Timetable */ = {
+			isa = PBXGroup;
+			children = (
+				CC2AC0541DCF117B00DF2A4C /* MainPageViewController.swift */,
+				CC2AC0691DCF3AD500DF2A4C /* TimeTableListController.swift */,
+				CC2AC06B1DCF3CE600DF2A4C /* TableCell.swift */,
+				CC2AC06F1DCF420000DF2A4C /* TrainInfoController.swift */,
+				CC2AC0711DCF425F00DF2A4C /* TrainInfoCell.swift */,
+			);
+			name = Timetable;
+			sourceTree = "<group>";
+		};
+		CC2AC0561DCF141600DF2A4C /* Toolkit */ = {
+			isa = PBXGroup;
+			children = (
+				CC2AC0591DCF14E400DF2A4C /* BaseView.swift */,
+				CC2AC05B1DCF159F00DF2A4C /* BaseButton.swift */,
+				CC2AC05D1DCF165300DF2A4C /* BaseViewController.swift */,
+			);
+			name = Toolkit;
+			sourceTree = "<group>";
+		};
+		CC2AC0681DCF3AA300DF2A4C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CC2AC0601DCF2BEB00DF2A4C /* data.xml */,
+				CC2AC0641DCF2F8100DF2A4C /* TimeTable.swift */,
+				CC2AC0661DCF332600DF2A4C /* TimeTableParser.swift */,
+				CC2AC06D1DCF419000DF2A4C /* data2.xml */,
+				CC2AC0731DCF44C800DF2A4C /* TrainInfo.swift */,
+				CC2AC0751DCF452800DF2A4C /* TrainingInfoParser.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC2AC01E1DCF0D5D00DF2A4C /* TrainTimetable1.0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC2AC0491DCF0D5D00DF2A4C /* Build configuration list for PBXNativeTarget "TrainTimetable1.0" */;
+			buildPhases = (
+				725D76542B0FFDF2D37D4375 /* [CP] Check Pods Manifest.lock */,
+				CC2AC01B1DCF0D5D00DF2A4C /* Sources */,
+				CC2AC01C1DCF0D5D00DF2A4C /* Frameworks */,
+				CC2AC01D1DCF0D5D00DF2A4C /* Resources */,
+				2E149A131872BE8551476417 /* [CP] Embed Pods Frameworks */,
+				605458D1832BBDC1F6D57E2C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrainTimetable1.0;
+			productName = TrainTimetable1.0;
+			productReference = CC2AC01F1DCF0D5D00DF2A4C /* TrainTimetable1.0.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CC2AC0341DCF0D5D00DF2A4C /* TrainTimetable1.0Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC2AC04C1DCF0D5D00DF2A4C /* Build configuration list for PBXNativeTarget "TrainTimetable1.0Tests" */;
+			buildPhases = (
+				CC2AC0311DCF0D5D00DF2A4C /* Sources */,
+				CC2AC0321DCF0D5D00DF2A4C /* Frameworks */,
+				CC2AC0331DCF0D5D00DF2A4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC2AC0371DCF0D5D00DF2A4C /* PBXTargetDependency */,
+			);
+			name = TrainTimetable1.0Tests;
+			productName = TrainTimetable1.0Tests;
+			productReference = CC2AC0351DCF0D5D00DF2A4C /* TrainTimetable1.0Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CC2AC03F1DCF0D5D00DF2A4C /* TrainTimetable1.0UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC2AC04F1DCF0D5D00DF2A4C /* Build configuration list for PBXNativeTarget "TrainTimetable1.0UITests" */;
+			buildPhases = (
+				CC2AC03C1DCF0D5D00DF2A4C /* Sources */,
+				CC2AC03D1DCF0D5D00DF2A4C /* Frameworks */,
+				CC2AC03E1DCF0D5D00DF2A4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC2AC0421DCF0D5D00DF2A4C /* PBXTargetDependency */,
+			);
+			name = TrainTimetable1.0UITests;
+			productName = TrainTimetable1.0UITests;
+			productReference = CC2AC0401DCF0D5D00DF2A4C /* TrainTimetable1.0UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC2AC0171DCF0D5D00DF2A4C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "武淅 段";
+				TargetAttributes = {
+					CC2AC01E1DCF0D5D00DF2A4C = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 99BGKUDWHK;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+					};
+					CC2AC0341DCF0D5D00DF2A4C = {
+						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CC2AC01E1DCF0D5D00DF2A4C;
+					};
+					CC2AC03F1DCF0D5D00DF2A4C = {
+						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CC2AC01E1DCF0D5D00DF2A4C;
+					};
+				};
+			};
+			buildConfigurationList = CC2AC01A1DCF0D5D00DF2A4C /* Build configuration list for PBXProject "TrainTimetable1.0" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC2AC0161DCF0D5D00DF2A4C;
+			productRefGroup = CC2AC0201DCF0D5D00DF2A4C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC2AC01E1DCF0D5D00DF2A4C /* TrainTimetable1.0 */,
+				CC2AC0341DCF0D5D00DF2A4C /* TrainTimetable1.0Tests */,
+				CC2AC03F1DCF0D5D00DF2A4C /* TrainTimetable1.0UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC2AC01D1DCF0D5D00DF2A4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC2AC02F1DCF0D5D00DF2A4C /* LaunchScreen.storyboard in Resources */,
+				CC2AC0611DCF2BEB00DF2A4C /* data.xml in Resources */,
+				CC2AC06E1DCF419000DF2A4C /* data2.xml in Resources */,
+				CC2AC02C1DCF0D5D00DF2A4C /* Assets.xcassets in Resources */,
+				CC2AC02A1DCF0D5D00DF2A4C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC2AC0331DCF0D5D00DF2A4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC2AC03E1DCF0D5D00DF2A4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E149A131872BE8551476417 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrainTimetable1.0/Pods-TrainTimetable1.0-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		605458D1832BBDC1F6D57E2C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrainTimetable1.0/Pods-TrainTimetable1.0-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		725D76542B0FFDF2D37D4375 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC2AC01B1DCF0D5D00DF2A4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC2AC0741DCF44C800DF2A4C /* TrainInfo.swift in Sources */,
+				CC2AC0701DCF420000DF2A4C /* TrainInfoController.swift in Sources */,
+				CC2AC06C1DCF3CE600DF2A4C /* TableCell.swift in Sources */,
+				CC2AC05E1DCF165300DF2A4C /* BaseViewController.swift in Sources */,
+				CC2AC0651DCF2F8100DF2A4C /* TimeTable.swift in Sources */,
+				CC2AC0721DCF425F00DF2A4C /* TrainInfoCell.swift in Sources */,
+				CC2AC0671DCF332600DF2A4C /* TimeTableParser.swift in Sources */,
+				CC2AC05A1DCF14E400DF2A4C /* BaseView.swift in Sources */,
+				CC2AC0551DCF117B00DF2A4C /* MainPageViewController.swift in Sources */,
+				CC2AC0761DCF452800DF2A4C /* TrainingInfoParser.swift in Sources */,
+				CC2AC05C1DCF159F00DF2A4C /* BaseButton.swift in Sources */,
+				CC2AC0231DCF0D5D00DF2A4C /* AppDelegate.swift in Sources */,
+				CC2AC06A1DCF3AD500DF2A4C /* TimeTableListController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC2AC0311DCF0D5D00DF2A4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC2AC03C1DCF0D5D00DF2A4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC2AC0371DCF0D5D00DF2A4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC2AC01E1DCF0D5D00DF2A4C /* TrainTimetable1.0 */;
+			targetProxy = CC2AC0361DCF0D5D00DF2A4C /* PBXContainerItemProxy */;
+		};
+		CC2AC0421DCF0D5D00DF2A4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC2AC01E1DCF0D5D00DF2A4C /* TrainTimetable1.0 */;
+			targetProxy = CC2AC0411DCF0D5D00DF2A4C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CC2AC0281DCF0D5D00DF2A4C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC2AC0291DCF0D5D00DF2A4C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CC2AC02D1DCF0D5D00DF2A4C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC2AC02E1DCF0D5D00DF2A4C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC2AC0471DCF0D5D00DF2A4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CC2AC0481DCF0D5D00DF2A4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC2AC04A1DCF0D5D00DF2A4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90F1B8251725680AA47567E6 /* Pods-TrainTimetable1.0.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 99BGKUDWHK;
+				INFOPLIST_FILE = TrainTimetable1.0/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "wuxi.TrainTimetable1-0";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CC2AC04B1DCF0D5D00DF2A4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05E215F3A7B13B4BC4DBF376 /* Pods-TrainTimetable1.0.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 99BGKUDWHK;
+				INFOPLIST_FILE = TrainTimetable1.0/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "wuxi.TrainTimetable1-0";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		CC2AC04D1DCF0D5D00DF2A4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TrainTimetable1.0Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "wuxi.TrainTimetable1-0Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrainTimetable1.0.app/TrainTimetable1.0";
+			};
+			name = Debug;
+		};
+		CC2AC04E1DCF0D5D00DF2A4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TrainTimetable1.0Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "wuxi.TrainTimetable1-0Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrainTimetable1.0.app/TrainTimetable1.0";
+			};
+			name = Release;
+		};
+		CC2AC0501DCF0D5D00DF2A4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = TrainTimetable1.0UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "wuxi.TrainTimetable1-0UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TrainTimetable1.0;
+			};
+			name = Debug;
+		};
+		CC2AC0511DCF0D5D00DF2A4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = TrainTimetable1.0UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "wuxi.TrainTimetable1-0UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TrainTimetable1.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC2AC01A1DCF0D5D00DF2A4C /* Build configuration list for PBXProject "TrainTimetable1.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC2AC0471DCF0D5D00DF2A4C /* Debug */,
+				CC2AC0481DCF0D5D00DF2A4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC2AC0491DCF0D5D00DF2A4C /* Build configuration list for PBXNativeTarget "TrainTimetable1.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC2AC04A1DCF0D5D00DF2A4C /* Debug */,
+				CC2AC04B1DCF0D5D00DF2A4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC2AC04C1DCF0D5D00DF2A4C /* Build configuration list for PBXNativeTarget "TrainTimetable1.0Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC2AC04D1DCF0D5D00DF2A4C /* Debug */,
+				CC2AC04E1DCF0D5D00DF2A4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC2AC04F1DCF0D5D00DF2A4C /* Build configuration list for PBXNativeTarget "TrainTimetable1.0UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC2AC0501DCF0D5D00DF2A4C /* Debug */,
+				CC2AC0511DCF0D5D00DF2A4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC2AC0171DCF0D5D00DF2A4C /* Project object */;
+}
