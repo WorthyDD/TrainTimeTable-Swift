@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "7BE1888A93ACF17478DE59E9A27D6C98FFE95299",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7BE1888A93ACF17478DE59E9A27D6C98FFE95299" : 9223372036854775807,
+    "BF606EBDF3315E78ADBE432953A5D9CE4697B7ED" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7BC91019-E819-48D8-85EE-194EFFB9DCA2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "7BE1888A93ACF17478DE59E9A27D6C98FFE95299" : "TrainTimetable1.0\/",
+    "BF606EBDF3315E78ADBE432953A5D9CE4697B7ED" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TrainTimetable1.0",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "TrainTimetable1.0.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/WorthyDD\/TrainTimeTable-Swift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7BE1888A93ACF17478DE59E9A27D6C98FFE95299"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/WorthyDD\/AirMonitor.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BF606EBDF3315E78ADBE432953A5D9CE4697B7ED"
+    }
+  ]
+}

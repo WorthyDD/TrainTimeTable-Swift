@@ -40,36 +40,54 @@ class MainPageViewController: UIViewController, XMLParserDelegate{
         let dest = destStationField.text
 //        let num = trainNumField.text
         
-        if start==nil || dest == nil{
-            self.view.makeToast("请填写起始站和终点站")
-            return
+        var urlStr = ""
+        var params : Dictionary<String, String> = [:];
+        if trainNumField.text!.characters.count > 0{
+            urlStr = baseUrl+"www.webxml.com.cn/WebServices/TrainTimeWebService.asmx/getStationAndTimeDataSetByLikeTrainCode?"
+            params = ["UserID" : "",
+                      "TrainCode" : trainNumField.text!]
+        }
+        else{
+            urlStr = baseUrl+"www.webxml.com.cn/WebServices/TrainTimeWebService.asmx/getStationAndTimeByStationName?"
+            params = ["UserID" : "",
+                      "StartStation" : start as String!,
+                      "ArriveStation" : dest as String!]
         }
         
-//        let userID : String! = ""
-//        let urlStr = baseUrl+"www.webxml.com.cn/WebServices/TrainTimeWebService.asmx/getStationAndTimeByStationName?"
-//        let params : Dictionary<String, String> =
-//            ["UserID" : userID!,
-//            "StartStation" : start as String!,
-//            "ArriveStation" : dest as String!]
-//        
-//        Alamofire.request(urlStr, method: .get, parameters: params).responseString { responseString in
-//            print(responseString)
-//        }
+        MBProgressHUD.showAdded(to: self.view, animated: true)
+        Alamofire.request(urlStr, method: .get, parameters: params).responseString { (response) in
+            
+           print("result-->\(response.result.value)")
+            MBProgressHUD.hide(for: self.view, animated: true)
+            if response.result.value != nil{
+                let delegate = TimeTableParser()
+                let parser = XMLParser(data: response.data!)
+                parser.delegate = delegate
+                parser.parse()
+                
+                for t in delegate.timetableArr{
+                    t.printTimetable()
+                }
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "TimeTableListController") as! TimeTableListController
+                vc.timeTableArr = delegate.timetableArr
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+        }
         
         
-        let delegate = TimeTableParser()
-        let parser = XMLParser(contentsOf: URL(fileURLWithPath: Bundle.main.path(forResource: "data", ofType: "xml")!))!
-        parser.delegate = delegate
-        parser.parse()
+//        let delegate = TimeTableParser()
+//        let parser = XMLParser(contentsOf: URL(fileURLWithPath: Bundle.main.path(forResource: "data", ofType: "xml")!))!
+//        parser.delegate = delegate
+//        parser.parse()
         
         
 //        for t in delegate.timetableArr{
 //            t.printTimetable()
 //        }
         
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "TimeTableListController") as! TimeTableListController
-        vc.timeTableArr = delegate.timetableArr
-        self.navigationController?.pushViewController(vc, animated: true)
+//        let vc = self.storyboard?.instantiateViewController(withIdentifier: "TimeTableListController") as! TimeTableListController
+//        vc.timeTableArr = delegate.timetableArr
+//        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     

@@ -27,6 +27,7 @@
 		CC2AC0721DCF425F00DF2A4C /* TrainInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2AC0711DCF425F00DF2A4C /* TrainInfoCell.swift */; };
 		CC2AC0741DCF44C800DF2A4C /* TrainInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2AC0731DCF44C800DF2A4C /* TrainInfo.swift */; };
 		CC2AC0761DCF452800DF2A4C /* TrainingInfoParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2AC0751DCF452800DF2A4C /* TrainingInfoParser.swift */; };
+		CCFEE0E91DD0C3B900961744 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFEE0E81DD0C3B900961744 /* MBProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,9 @@
 		CC2AC0711DCF425F00DF2A4C /* TrainInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainInfoCell.swift; sourceTree = "<group>"; };
 		CC2AC0731DCF44C800DF2A4C /* TrainInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainInfo.swift; sourceTree = "<group>"; };
 		CC2AC0751DCF452800DF2A4C /* TrainingInfoParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingInfoParser.swift; sourceTree = "<group>"; };
+		CCFEE0E61DD0C3B800961744 /* TrainTimetable1.0-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TrainTimetable1.0-Bridging-Header.h"; sourceTree = "<group>"; };
+		CCFEE0E71DD0C3B900961744 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		CCFEE0E81DD0C3B900961744 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +202,7 @@
 		CC2AC0561DCF141600DF2A4C /* Toolkit */ = {
 			isa = PBXGroup;
 			children = (
+				CCFEE0E51DD0C3A900961744 /* MBProgressHUD */,
 				CC2AC0591DCF14E400DF2A4C /* BaseView.swift */,
 				CC2AC05B1DCF159F00DF2A4C /* BaseButton.swift */,
 				CC2AC05D1DCF165300DF2A4C /* BaseViewController.swift */,
@@ -216,6 +221,16 @@
 				CC2AC0751DCF452800DF2A4C /* TrainingInfoParser.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		CCFEE0E51DD0C3A900961744 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				CCFEE0E71DD0C3B900961744 /* MBProgressHUD.h */,
+				CCFEE0E81DD0C3B900961744 /* MBProgressHUD.m */,
+				CCFEE0E61DD0C3B800961744 /* TrainTimetable1.0-Bridging-Header.h */,
+			);
+			name = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,6 +437,7 @@
 				CC2AC05C1DCF159F00DF2A4C /* BaseButton.swift in Sources */,
 				CC2AC0231DCF0D5D00DF2A4C /* AppDelegate.swift in Sources */,
 				CC2AC06A1DCF3AD500DF2A4C /* TimeTableListController.swift in Sources */,
+				CCFEE0E91DD0C3B900961744 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -570,13 +586,15 @@
 			baseConfigurationReference = 90F1B8251725680AA47567E6 /* Pods-TrainTimetable1.0.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 99BGKUDWHK;
 				INFOPLIST_FILE = TrainTimetable1.0/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "wuxi.TrainTimetable1-0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "TrainTimetable1.0/TrainTimetable1.0-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -586,13 +604,14 @@
 			baseConfigurationReference = 05E215F3A7B13B4BC4DBF376 /* Pods-TrainTimetable1.0.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 99BGKUDWHK;
 				INFOPLIST_FILE = TrainTimetable1.0/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "wuxi.TrainTimetable1-0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "TrainTimetable1.0/TrainTimetable1.0-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

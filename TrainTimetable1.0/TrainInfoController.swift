@@ -8,6 +8,7 @@
 
 import UIKit
 import Foundation
+import Alamofire
 
 class TrainInfoController: UIViewController, UITableViewDataSource, UITableViewDelegate{
 
@@ -27,14 +28,41 @@ class TrainInfoController: UIViewController, UITableViewDataSource, UITableViewD
         label.font = UIFont.boldSystemFont(ofSize: 20)
         tableView.tableHeaderView = label
         tableView.backgroundColor = UIColor.white
-        let delegate = TrainingInfoParser()
-        let parser = XMLParser(contentsOf: URL(fileURLWithPath: Bundle.main.path(forResource: "data2", ofType: "xml")!))!
-        parser.delegate = delegate
-        parser.parse()
         
         
-        trainInfoArr = delegate.trainInfoArr
-        tableView.reloadData()
+        
+        //load data
+        let urlStr = "http://cors.itxti.net/?www.webxml.com.cn/WebServices/TrainTimeWebService.asmx/getDetailInfoByTrainCode?"
+        let params : Dictionary<String, String>=
+            ["UserID" : "",
+             "TrainCode" : trainCode]
+        
+        MBProgressHUD.showAdded(to: self.view, animated: true)
+        Alamofire.request(urlStr, method: .get, parameters: params).responseString { (response) in
+            
+            MBProgressHUD.hide(for: self.view, animated: true)
+            if response.result.value != nil{
+                
+                let delegate = TrainingInfoParser()
+                let parser = XMLParser(data: response.data!)
+                parser.delegate = delegate
+                parser.parse()
+                
+                self.trainInfoArr = delegate.trainInfoArr
+                self.tableView.reloadData()
+            }
+        }
+        
+        
+        
+//        let delegate = TrainingInfoParser()
+//        let parser = XMLParser(contentsOf: URL(fileURLWithPath: Bundle.main.path(forResource: "data2", ofType: "xml")!))!
+//        parser.delegate = delegate
+//        parser.parse()
+//        
+//        
+//        trainInfoArr = delegate.trainInfoArr
+//        tableView.reloadData()
         
     }
 
